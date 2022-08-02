@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashbroad</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/jpg" href="Images/Icons/LogoIcon.ico">
+        <link rel="stylesheet" href="Style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="swal.js"></script>
+    </head>
+    <body onload="loadWelcome(),createUser(),createProduct(),showManageProduct(1)">
+        <section id="adminpage">
+            <div id="menubar">
+                <a href="Admin.html"><img src="Images/Icons/logo.jpg"></a>
+                <p>Dashbroad</p>
+                <ul>
+                    <li onclick="showManageProduct(1)" id="mnp">Manage product</li>
+                    <li onclick="showManageUser()" id="mnu">Manage User</li>
+                    <li onclick="showAddMenu()" id="am">Add Product</li>
+                    <li onclick="showOrderList()" id="ol">Manage Bill</li>  
+                    <!-- <li onclick="showHistorylist()" id="ht">History</li>   -->
+                    <li onclick="showSearch2()" id="tk">Search Bill</li>
+                    <li onclick="showThongke()" id="thongke">Satistical</li>
+                    <li onclick="backMainpage()" id="mp">Main page</li>
+                    <li onclick="logout()" style="margin-top: 40px;" class="outok"><span >Logout</span></li>
+                </ul>
+            </div>
+            <div id="broad">
+                <div id="hideopennav">&#x2630;</div>    
+                <div id="admintest"></div>
+            </div>
+            <div id="detailmodal"><div id="detailtail"></div></div>  
+            <div id="id01" class="modal2">
+                <div class="modal-content animate" style="margin:0 auto">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close2" title="Close Modal">&times;</span>
+                    <h2 style="text-align: center;">Edit product information</h2>
+                  </div>
+                  <div class="container">
+                    <label for="productid">ProductID:</label>
+                    <input type="text" id="productID1" value=""></br>
+              
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brand1" value=""></br>
+                     
+                    <label for="img">Picture:</label>
+                    <input type="file" id="img1" value=""></br>
+                    
+                    <label for="ten">Name:</label>
+                    <input type="text" id="name1" value=""></br>
+                    
+                    <label for="gia">Price:</label>
+                    <input type="text" id="price1" value=""></br>
+                    
+                    <label for="soluong">Amount:</label>
+                    <input type="text" id="amount1" value=""></br>
+
+                    <label for="img">Picture:</label>
+                    <input type="file" id="img21" value=""></br>
+
+                    <label for="img">Picture:</label>
+                    <input type="file" id="imgct1" value=""></br>
+                    
+                    <button onclick="suasanpham()">Fix product</button>
+                  </div>
+                <div>
+            </div>
+        </section>
+    </body>
+    <script src="javascripts.js"></script>
+</html>
